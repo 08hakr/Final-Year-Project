@@ -88,7 +88,7 @@ def summarizer(rawdocs):
         # Parse the JSON data
 
         # Extract the summary
-        summary = json_data["openai"]["result"] #a
+        summary = json_data[dataT["a"]]["result"] #a
         # print(json_data) #a
         return summary,rawdocs,len(rawdocs.split(' ')),len(summary.split(' ')) #a
 
